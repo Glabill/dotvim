@@ -110,6 +110,7 @@ function! OpenTerminal()
   split term://zsh
   resize 10
 endfunction
+
 nnoremap <c-n> :call OpenTerminal()<CR>
 
 nnoremap <leader>v <cmd>vsplit<cr>
@@ -174,7 +175,7 @@ augroup END
 set noshowmode
 set wildignore+=*/node_modules/**
 
-command -nargs=1 Sch noautocmd vimgrep /<args>/gj `git ls-files` | cw
+" command -nargs=1 Sch noautocmd vimgrep /<args>/gj `git ls-files` | cw
 
 
 " Syntastic config
