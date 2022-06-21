@@ -175,9 +175,6 @@ augroup END
 set noshowmode
 set wildignore+=*/node_modules/**
 
-" command -nargs=1 Sch noautocmd vimgrep /<args>/gj `git ls-files` | cw
-
-
 " Syntastic config
 
 let g:syntastic_always_populate_loc_list = 1
