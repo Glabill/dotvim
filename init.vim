@@ -87,7 +87,7 @@ let g:tokyonight_style = "storm"
 let g:sonokai_style = "atlantis"
 let g:sonokai_enable_italic = "1"
 set background=dark
-colorscheme tokyonight
+colorscheme everforest
 
 " Emmet config
 let g:user_emmet_leader_key = '<C-F>'
