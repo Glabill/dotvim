@@ -134,11 +134,12 @@ nnoremap <leader>l <C-w>L<CR>
 " Search mappings
 nnoremap <C-s> :%s/
 nnoremap <leader>ff <cmd>Telescope find_files hidden=true<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
-nnoremap <leader>bb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-nnoremap <leader>fc <cmd>Telescope colorscheme<cr>
-nnoremap <leader>fs <cmd>Telescope grep_string<cr>
+nnoremap <leader>fa <cmd>Telescope live_grep_args<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>bb <cmd>Telescope buffers theme=dropdown<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags theme=dropdown<cr>
+nnoremap <leader>fc <cmd>Telescope colorscheme theme=dropdown<cr>
+nnoremap <leader>fs <cmd>Telescope grep_string theme=ivy<cr>
 nnoremap <leader>fb <cmd>Telescope file_browser hidden=true<cr>
 nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
 
@@ -324,20 +325,15 @@ require("startup").setup{
 [[]],
 [[]],
 [[]],
-[[]],
-[[]],
-[[]],
-[[]],
-[[  ╭╮╭┬─╮╭─╮┬  ┬┬╭┬╮  ]],
-[[  │││├┤ │ │╰┐┌╯││││  ]],
-[[  ╯╰╯╰─╯╰─╯ ╰╯ ┴┴ ┴  ]],
-[[]],
-[[]],
-[[]],
-[[]],
-[[]],
-[[]],
-[[]],
+[[                     ]],
+[[                     ]],
+[[                     ]],
+[[                     ]],
+[[  ╭╮╭┬─╮╭─╮┬ ┬┬╭┬╮  ]],
+[[  │││├┤ │││╭╯││││  ]],
+[[  ╯╰╯╰─╯╰─╯╰╯ ┴┴ ┴  ]],
+[[                     ]],
+[[                     ]],
     },
     highlight = "Title",
     default_color = "#FFFFFF",
